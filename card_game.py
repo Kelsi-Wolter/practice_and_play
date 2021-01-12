@@ -24,8 +24,17 @@ class DeckofCards:
                 card = Card(num, suite)
                 self.cards.append(card)
     
+
     def __repr__(self):
         deck = len(self.cards)
         return f'<DeckofCards: {deck} cards currently in deck>'
+
+class HandofCards:
+    def __init__(self, num_cards):
+        self.num_cards = num_cards
+        self.card = []
+
+    def __repr__(self):
+        return f'<Current Hand: {self.cards}'
 
 
